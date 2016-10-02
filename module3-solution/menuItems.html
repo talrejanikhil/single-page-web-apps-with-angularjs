@@ -1,0 +1,12 @@
+<table class="table table-stripped table-bordered table-hover">
+  <tbody>
+  <tr ng-repeat="item in list.items">
+    <td>{{item.short_name}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.description}}</td>
+    <td>
+      <button class="btn btn-small" ng-click="list.onRemove({index : $index});">Don't want this one!</button>
+    </td>
+  </tr>
+</tbody>
+</table>
