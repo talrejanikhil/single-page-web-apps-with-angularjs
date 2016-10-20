@@ -3,6 +3,6 @@
     <div ng-if="myInfoCtrl.userInfo == null">
         Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a>
     </div>
-    <user-info ng-if="myInfoCtrl.userInfo != null" user-info="myInfoCtrl.userInfo.user"></user-info>
-    <menu-item ng-if="myInfoCtrl.userInfo != null" menu-item="myInfoCtrl.userInfo.menuItem"></menu-item>
+    <user-info ng-if="myInfoCtrl.userInfo.user != null" user-info="myInfoCtrl.userInfo.user"></user-info>
+    <menu-item ng-if="myInfoCtrl.userInfo.menuItem != null" menu-item="myInfoCtrl.userInfo.menuItem"></menu-item>
 </div>
